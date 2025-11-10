@@ -1,15 +1,8 @@
-const express = require("express");
-const cors = require("cors");
+import { registerRootComponent } from 'expo';
 
-const app = express();
+import App from './App';
 
-app.use(cors());
-app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.send("Servidor Express funcionando para nuestro laboratorio practico No 10");
-});
-
-app.listen(3000, () => {
-  console.log("Servidor corriendo en http://localhost:3000");
-});
+// registerRootComponent calls AppRegistry.registerComponent('main', () => App);
+// It also ensures that whether you load the app in Expo Go or in a native build,
+// the environment is set up appropriately
+registerRootComponent(App);

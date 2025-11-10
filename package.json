@@ -1,20 +1,31 @@
 {
-  "name": "api-crud",
-  "version": "1.0.0",
+  "license": "0BSD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "description": "",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "mysql2": "^3.15.2",
-    "nodemon": "^3.1.10"
-  }
+    "expo": "~53.0.22",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-native": "0.79.6",
+    "expo-av": "~15.1.7",
+    "expo-camera": "~16.1.11",
+    "expo-sqlite": "~15.2.14",
+    "expo-location": "~18.1.6",
+    "expo-file-system": "~18.1.11",
+    "@expo/vector-icons": "^14.1.0",
+    "expo-document-picker": "~13.1.6",
+    "react-native-screens": "~4.11.1",
+    "@react-navigation/native": "^6.1.7",
+    "@react-navigation/native-stack": "^6.9.12",
+    "react-native-safe-area-context": "5.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0"
+  },
+  "private": true
 }
